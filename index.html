@@ -2,20 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gladmore's Website</title>
+    <title>Sweet Delights - Baking Website</title>
     <style>
         /* General Page Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Trebuchet MS', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            background: #fff8f0;
             color: #333;
         }
 
         /* Navigation Bar */
         nav {
-            background: #2c3e50;
+            background: #8e4b10;
             padding: 15px;
             text-align: center;
         }
@@ -29,65 +29,87 @@
         }
 
         nav a:hover {
-            color: #1abc9c;
+            color: #ffd28d;
         }
 
-        /* Header Section */
+        /* Hero Section */
         header {
-            background: url('https://source.unsplash.com/1600x400/?technology,computer') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x500/?baking,bread,cake') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 120px 20px;
         }
 
         header h1 {
-            font-size: 50px;
+            font-size: 60px;
             margin: 0;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
         }
 
         header p {
-            font-size: 20px;
+            font-size: 22px;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
         }
 
         /* Section Styling */
         section {
-            padding: 40px;
-            max-width: 900px;
+            padding: 50px;
+            max-width: 1000px;
             margin: auto;
         }
 
         h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #1abc9c;
+            color: #8e4b10;
+            border-bottom: 3px solid #ffd28d;
             padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        /* List */
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
+        /* Recipes Grid */
+        .recipes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .recipe-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .recipe-card h3 {
+            color: #8e4b10;
         }
 
         /* Contact Section */
         .contact {
-            background: #2c3e50;
+            background: #8e4b10;
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 40px;
         }
 
         .contact a {
-            color: #1abc9c;
+            color: #ffd28d;
             text-decoration: none;
             font-weight: bold;
         }
 
         /* Footer */
         footer {
-            background: #1abc9c;
+            background: #ffd28d;
             text-align: center;
-            padding: 15px;
-            color: white;
+            padding: 20px;
+            color: #8e4b10;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -96,45 +118,63 @@
     <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#subjects">Subjects</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Header -->
+    <!-- Hero Section -->
     <header id="home">
-        <h1>Welcome to My Website</h1>
-        <p>Learning Computer Applications Technology (CAT) 🚀</p>
+        <h1>Sweet Delights</h1>
+        <p>Baking Happiness, One Recipe at a Time 🍰</p>
     </header>
+
+    <!-- Recipes Section -->
+    <section id="recipes">
+        <h2>Popular Recipes</h2>
+        <div class="recipes">
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/400x300/?cake,chocolate" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich, moist, and topped with creamy frosting. A true classic!</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/400x300/?bread,fresh" alt="Fresh Bread">
+                <h3>Fresh Bread</h3>
+                <p>Golden crust, soft inside – perfect with butter or jam.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/400x300/?cookies,chocolatechip" alt="Cookies">
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Crispy on the edges, chewy in the center. The perfect treat!</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/400x300/?muffins,blueberry" alt="Muffins">
+                <h3>Blueberry Muffins</h3>
+                <p>Sweet muffins filled with juicy blueberries. A breakfast favorite.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! My name is Gladmore. I am a student passionate about technology, coding, and design. 
-        This website is part of my CAT learning journey, and I’m excited to share my subjects and projects with you.</p>
-    </section>
-
-    <!-- Subjects Section -->
-    <section id="subjects">
-        <h2>My Subjects</h2>
-        <ul>
-            <li>Mathematics</li>
-            <li>English</li>
-            <li>Science</li>
-            <li>CAT (Computer Applications Technology)</li>
-        </ul>
+        <h2>About Us</h2>
+        <p>At <strong>Sweet Delights</strong>, we believe that baking is more than just food – it’s love, tradition, and happiness. 
+        Our recipes are inspired by family traditions and modern flavors, designed to bring smiles to your table. 
+        Whether it’s a birthday cake, fresh bread, or cookies for sharing, we bake with passion and care. 🧡</p>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:gladmore@example.com">gladmore@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/" target="_blank">My GitHub</a></p>
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@sweetdelights.com">info@sweetdelights.com</a></p>
+        <p>Instagram: <a href="https://instagram.com" target="_blank">@sweetdelights</a></p>
+        <p>Facebook: <a href="https://facebook.com" target="_blank">Sweet Delights Bakery</a></p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Gladmore | My First Professional Website</p>
+        <p>© 2025 Sweet Delights Bakery | Baked with Love 🧁</p>
     </footer>
 
 </body>
