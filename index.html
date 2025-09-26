@@ -2,28 +2,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Delights - Baking Website</title>
+    <title>Sweet Delights - Professional Baking Website</title>
     <style>
         /* General Page Styling */
         body {
             font-family: 'Trebuchet MS', sans-serif;
             margin: 0;
             padding: 0;
-            background: #fff8f0;
+            background: #fffaf3;
             color: #333;
         }
 
-        /* Navigation Bar */
+        /* Navigation */
         nav {
-            background: #8e4b10;
+            background: #6b3e1d;
             padding: 15px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 10px 20px;
             font-size: 18px;
             font-weight: bold;
         }
@@ -34,41 +36,64 @@
 
         /* Hero Section */
         header {
-            background: url('https://source.unsplash.com/1600x500/?baking,bread,cake') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x600/?bakery,dessert') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 120px 20px;
+            padding: 150px 20px;
         }
 
         header h1 {
-            font-size: 60px;
+            font-size: 70px;
             margin: 0;
             text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
         }
 
         header p {
-            font-size: 22px;
+            font-size: 24px;
+            margin-top: 15px;
             text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+        }
+
+        header a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #ffd28d;
+            color: #6b3e1d;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        header a:hover {
+            background: #ffbd66;
         }
 
         /* Section Styling */
         section {
-            padding: 50px;
-            max-width: 1000px;
+            padding: 60px 20px;
+            max-width: 1100px;
             margin: auto;
         }
 
         h2 {
-            color: #8e4b10;
+            color: #6b3e1d;
             border-bottom: 3px solid #ffd28d;
             padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         /* Recipes Grid */
         .recipes {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
 
@@ -86,21 +111,81 @@
         }
 
         .recipe-card h3 {
-            color: #8e4b10;
+            margin: 15px 0 10px;
+            color: #6b3e1d;
         }
 
-        /* Contact Section */
-        .contact {
-            background: #8e4b10;
-            color: white;
-            text-align: center;
+        /* Tips Section */
+        .tips {
+            background: #fff0db;
             padding: 40px;
+            border-radius: 10px;
         }
 
-        .contact a {
-            color: #ffd28d;
-            text-decoration: none;
+        .tips ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .tips li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: #fdf4e7;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .testimonial {
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial strong {
+            display: block;
+            margin-top: 5px;
+            color: #6b3e1d;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: #6b3e1d;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background: #ffd28d;
+            color: #6b3e1d;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
             font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #ffbd66;
         }
 
         /* Footer */
@@ -108,7 +193,7 @@
             background: #ffd28d;
             text-align: center;
             padding: 20px;
-            color: #8e4b10;
+            color: #6b3e1d;
             font-weight: bold;
         }
     </style>
@@ -119,19 +204,22 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#recipes">Recipes</a>
+        <a href="#tips">Tips</a>
         <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header id="home">
-        <h1>Sweet Delights</h1>
+        <h1>Sweet Delights Bakery</h1>
         <p>Baking Happiness, One Recipe at a Time 🍰</p>
+        <a href="#recipes">Explore Recipes</a>
     </header>
 
-    <!-- Recipes Section -->
+    <!-- Recipes -->
     <section id="recipes">
-        <h2>Popular Recipes</h2>
+        <h2>Our Popular Recipes</h2>
         <div class="recipes">
             <div class="recipe-card">
                 <img src="https://source.unsplash.com/400x300/?cake,chocolate" alt="Chocolate Cake">
@@ -153,28 +241,77 @@
                 <h3>Blueberry Muffins</h3>
                 <p>Sweet muffins filled with juicy blueberries. A breakfast favorite.</p>
             </div>
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/400x300/?croissant" alt="Croissant">
+                <h3>Buttery Croissants</h3>
+                <p>Flaky, golden croissants baked to perfection.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/400x300/?pie,apple" alt="Apple Pie">
+                <h3>Apple Pie</h3>
+                <p>A warm, cinnamon-filled pie that tastes like home.</p>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At <strong>Sweet Delights</strong>, we believe that baking is more than just food – it’s love, tradition, and happiness. 
-        Our recipes are inspired by family traditions and modern flavors, designed to bring smiles to your table. 
-        Whether it’s a birthday cake, fresh bread, or cookies for sharing, we bake with passion and care. 🧡</p>
+    <!-- Tips -->
+    <section id="tips" class="tips">
+        <h2>Baking Tips & Tutorials</h2>
+        <ul>
+            <li>Always preheat your oven for even baking.</li>
+            <li>Use room temperature ingredients for better mixing.</li>
+            <li>Don’t overmix your batter – it makes cakes tough.</li>
+            <li>Weigh ingredients for accuracy instead of using cups.</li>
+            <li>Allow baked goods to cool before slicing for best texture.</li>
+        </ul>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p><strong>Sweet Delights Bakery</strong> was founded with a passion for creating desserts that bring people together. 
+        Our bakers blend traditional recipes with modern creativity, ensuring every bite is unforgettable. 
+        From decadent cakes to warm breads, our mission is simple: spread joy through baking.  
+        We’ve grown from a small family kitchen into a community favorite, but our love for quality and care remains the same. 🧡</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            “The chocolate cake was the best I’ve ever had. Moist, rich, and beautifully decorated!”  
+            <strong>- Sarah M.</strong>
+        </div>
+        <div class="testimonial">
+            “Every Sunday, I buy their fresh bread. It tastes like my grandmother’s baking.”  
+            <strong>- David K.</strong>
+        </div>
+        <div class="testimonial">
+            “Sweet Delights is my go-to for all birthdays and celebrations. They never disappoint.”  
+            <strong>- Anna P.</strong>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-form">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:info@sweetdelights.com">info@sweetdelights.com</a></p>
-        <p>Instagram: <a href="https://instagram.com" target="_blank">@sweetdelights</a></p>
-        <p>Facebook: <a href="https://facebook.com" target="_blank">Sweet Delights Bakery</a></p>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Sweet Delights Bakery | Baked with Love 🧁</p>
+        <p>© 2025 Sweet Delights Bakery | Made with Love 🧁 | Follow us on Instagram @sweetdelights</p>
     </footer>
 
 </body>
