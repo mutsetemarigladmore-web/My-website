@@ -1,21 +1,21 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - Shawn Chikanya</title>
+  <title>About Me - Gladmore</title>
   <style>
     body {
-      font-family: 'Comic Sans MS', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f0f9ff;
+      background: #f5f5f5;
       color: #333;
     }
 
     /* Navbar */
     nav {
-      background: #2196f3;
+      background: #222;
       padding: 15px;
       text-align: center;
     }
@@ -27,34 +27,34 @@
       font-size: 18px;
     }
     nav a:hover {
-      color: #ffeb3b;
+      color: #ff9800;
     }
 
-    /* Hero */
+    /* Hero Section */
     header {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                  url('https://source.unsplash.com/1600x600/?kids,fun') no-repeat center/cover;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://source.unsplash.com/1600x600/?technology,computer') no-repeat center/cover;
       color: white;
       text-align: center;
-      padding: 100px 20px;
+      padding: 120px 20px;
     }
     header h1 {
       font-size: 60px;
       margin: 0;
     }
     header p {
-      font-size: 22px;
-      margin-top: 10px;
+      font-size: 24px;
+      margin-top: 15px;
     }
 
     /* Sections */
     section {
-      padding: 50px 20px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
     }
     h2 {
-      color: #2196f3;
+      color: #ff9800;
       font-size: 32px;
       border-bottom: 3px solid #ddd;
       padding-bottom: 10px;
@@ -65,51 +65,48 @@
       line-height: 1.6;
     }
 
-    /* Profile Picture */
-    .profile {
-      text-align: center;
-      margin: 30px 0;
+    /* Skills */
+    .skills {
+      margin-top: 20px;
     }
-    .profile img {
+    .skill {
+      margin-bottom: 20px;
+    }
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .skill-bar {
+      background: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .skill-level {
+      background: #ff9800;
+      padding: 8px;
+      color: white;
+      width: 0;
+    }
+    .html { width: 90%; }
+    .css { width: 80%; }
+    .js { width: 70%; }
+    .python { width: 60%; }
+
+    /* Profile image */
+    .profile-pic {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .profile-pic img {
       border-radius: 50%;
       width: 180px;
       height: 180px;
-      border: 5px solid #2196f3;
-    }
-
-    /* Skills */
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .skill-card {
-      background: #e3f2fd;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-    }
-    .skill-card h3 {
-      margin-bottom: 10px;
-      color: #1565c0;
-    }
-
-    /* Hobbies */
-    .hobbies {
-      background: #fff9c4;
-      padding: 30px;
-      border-radius: 10px;
-    }
-    .hobbies ul {
-      list-style: square;
-      padding-left: 20px;
-      font-size: 18px;
+      border: 5px solid #ff9800;
     }
 
     /* Contact */
     .contact {
-      background: #2196f3;
+      background: #222;
       color: white;
       border-radius: 10px;
       padding: 40px;
@@ -127,22 +124,21 @@
       font-size: 16px;
     }
     .contact button {
-      background: #ffeb3b;
+      background: #ff9800;
       border: none;
       padding: 12px 25px;
       font-size: 18px;
-      color: #333;
+      color: white;
       border-radius: 8px;
       cursor: pointer;
-      font-weight: bold;
     }
     .contact button:hover {
-      background: #fdd835;
+      background: #e68900;
     }
 
     /* Footer */
     footer {
-      background: #1565c0;
+      background: #111;
       color: white;
       text-align: center;
       padding: 20px;
@@ -155,35 +151,35 @@
   <!-- Navbar -->
   <nav>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
+    <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
     <a href="#hobbies">Hobbies</a>
-    <a href="#dreams">Dreams</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <header id="home">
-    <h1>Shawn Chikanya</h1>
-    <p>11 Years Old | Dreamer | Explorer | Future Inventor 🚀</p>
+    <h1>Gladmore Mutsetema</h1>
+    <p>Aspiring Web Developer | Creative Thinker | Lifelong Learner</p>
   </header>
 
-  <!-- Profile -->
-  <div class="profile">
-    <img src="https://source.unsplash.com/200x200/?boy,portrait" alt="Shawn's photo">
+  <!-- Profile Picture -->
+  <div class="profile-pic">
+    <img src="https://source.unsplash.com/200x200/?person,portrait" alt="Profile Picture">
   </div>
 
   <!-- About Me -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Hi! My name is <strong>Shawn Chikanya</strong>, and I am 11 years old.  
-      I love learning new things, especially about science, technology, and computers.  
-      At school, I enjoy subjects like Mathematics and English, and I always look for ways 
-      to challenge myself with creative projects.  
+      Hello! My name is <strong>Gladmore Mutsetema</strong>, and I’m passionate about technology, creativity, 
+      and building things that make a difference. I’ve always been curious about how websites, apps, 
+      and software work, which led me to start learning coding and web development.  
       <br><br>
-      My friends know me as someone who is curious, playful, and always ready to help. 
-      I believe that even at a young age, I can start building skills that will help me in the future.
+      I enjoy solving problems, designing creative solutions, and constantly challenging myself with new 
+      projects. My long-term dream is to become a professional developer who contributes to exciting 
+      projects that people all around the world can use and enjoy.
     </p>
   </section>
 
@@ -191,46 +187,45 @@
   <section id="skills">
     <h2>My Skills</h2>
     <div class="skills">
-      <div class="skill-card">
-        <h3>Drawing ✏️</h3>
-        <p>I enjoy sketching cartoons, superheroes, and creative ideas in my notebook.</p>
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar"><div class="skill-level html">90%</div></div>
       </div>
-      <div class="skill-card">
-        <h3>Gaming 🎮</h3>
-        <p>I’m good at strategy and adventure games, and I love solving in-game challenges.</p>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar"><div class="skill-level css">80%</div></div>
       </div>
-      <div class="skill-card">
-        <h3>Sports ⚽</h3>
-        <p>I like playing football with my friends and staying active outdoors.</p>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar"><div class="skill-level js">70%</div></div>
       </div>
-      <div class="skill-card">
-        <h3>Coding Basics 💻</h3>
-        <p>I’m learning the basics of coding and web development to create fun projects.</p>
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-bar"><div class="skill-level python">60%</div></div>
       </div>
     </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education & Experience</h2>
+    <p>
+      📘 <strong>High School</strong> – Focused on Computer Applications Technology (CAT), Mathematics, and Science.  
+      💻 <strong>Self-Taught Developer</strong> – Building projects like websites, small apps, and learning from online resources.  
+      🌍 <strong>Future Plans</strong> – To study further in Computer Science or Software Engineering and create real-world applications.  
+    </p>
   </section>
 
   <!-- Hobbies -->
   <section id="hobbies">
     <h2>Hobbies & Interests</h2>
-    <div class="hobbies">
-      <ul>
-        <li>Playing football and video games</li>
-        <li>Watching cartoons and superhero movies</li>
-        <li>Reading fun books and comics</li>
-        <li>Exploring science experiments</li>
-        <li>Spending time with family and friends</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Dreams -->
-  <section id="dreams">
-    <h2>My Dreams</h2>
     <p>
-      When I grow up, I want to become an <strong>inventor or a software engineer</strong>.  
-      I dream of building new gadgets, apps, and robots that can help people and make the world better.  
-      I also want to travel the world, meet new people, and learn about different cultures. 🌍  
+      Outside of coding, I enjoy:  
+      🎮 Playing video games  
+      🎵 Listening to music  
+      ⚽ Playing and watching football  
+      📚 Reading technology blogs & books  
+      ✈️ Exploring new places and cultures  
     </p>
   </section>
 
@@ -253,7 +248,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Shawn Chikanya | Built with curiosity ✨</p>
+    <p>© 2025 Gladmore Mutsetema | Designed with passion ❤</p>
   </footer>
 
 </body>
